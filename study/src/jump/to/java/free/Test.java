@@ -26,7 +26,7 @@ public class Test{
         strList.stream().forEach(System.out::print);
         System.out.println();
         
-        List li = new ArrayList();
+        List li = new ArrayList(); // 엥 이게된다고?
         li.add("1");
         li.add(1);
         li.add(1.1);
