@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Quest5 {
 
     /**
-     * 문제 4번
+     * 문제 5번
      * 
      * 사용자로부터 2~9의 숫자 중 하나를 입력받아 해당 숫자의 구구단을 한 줄로 출력하는 프로그램을 작성하시오.
      */

@@ -1,36 +1,20 @@
 package jump.to.java.free;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Scanner;
 
+/*
+ * 1부터 n까지 진행되는 숫자들 중 3, 6, 9 가 들어가는 숫자는 *로 표시하기
+ */
 public class Test{
     public static void main(String[] args) {
-
-        List<String> strList = new ArrayList<>() ;
-        strList.add("하나");
-        strList.add("둘");
-        strList.add("삼");
-        strList.add("넷");
-        strList.add("오");
-        strList.add("여섯");
-        strList.add("칠");
-        strList.add("팔");
-        strList.add("아홉");
-        strList.stream().forEach(System.out::print);        
-        System.out.println();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         
-        Stream<String> str = strList.stream().sorted();
-        strList = str.collect(Collectors.toList());
-        strList.stream().forEach(System.out::print);
-        System.out.println();
-        
-        List li = new ArrayList(); // 엥 이게된다고?
-        li.add("1");
-        li.add(1);
-        li.add(1.1);
-        
-        li.stream().forEach(System.out::println);
+        for (int i = 1; i <= n; i++) {
+            if (i % 10 == 0) {
+                System.out.println();
+            }
+            String num = Integer.toString(i); // 문자열을 인덱스로 하나씩 읽어서 3, 6, 9에 해당하는 것이 있으면 *
+        }
     }
 }
